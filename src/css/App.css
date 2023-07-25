@@ -1,0 +1,15 @@
+* {
+  max-width: 1583px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Itim", cursive;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: url(../images/Fondo.jpg);
+}

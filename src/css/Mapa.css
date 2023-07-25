@@ -1,0 +1,18 @@
+.container-mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100vh;
+  height: 54vw;
+}
+
+.mapa-title {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+.mapa {
+  border-radius: 1rem;
+}

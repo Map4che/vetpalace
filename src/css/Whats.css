@@ -1,0 +1,12 @@
+.logo-whatsapp {
+  position: fixed;
+  width: 8rem;
+  top: 50vh;
+  right: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.logo-whatsapp:hover {
+  transform: scale(1.2);
+}
