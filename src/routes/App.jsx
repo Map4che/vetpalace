@@ -23,6 +23,8 @@ function App() {
           <Route path="/planes" exact element={<Planes />} />
           <Route path="/galeria" exact element={<Galeria />} />
           <Route path="/ubicacion" exact element={<Ubicacion />} />
+
+          <Route path="*" exact element={<Home />} />
         </Routes>
         <Footer />
         <Whats />
