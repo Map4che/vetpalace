@@ -1,15 +1,31 @@
 import { Link } from "react-router-dom";
 import Logo from "../images/Vinilo.jpg";
 import "../css/Header.css";
+import { useEffect, useRef, useState } from "react";
 
 const Header = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleClass = () => {
+    setIsActive(!isActive);
+    /*if (!isActive) {
+      setIsActive(isActive);
+    } else {
+      setIsActive(!isActive);
+    }*/
+    console.log("Boton");
+  };
+
   return (
     <header className="encabezado">
+      <div className="container-hamburger">
+        <div className="hamburguer" onClick={toggleClass}></div>
+      </div>
       <div className="container-logo">
         <img src={Logo} alt="Logo" className="logo-vetpalace" />
       </div>
-      <nav className="contenedor-lista">
-        <ul className="lista">
+      <nav className="container-lista">
+        <ul className={`lista ${isActive ? "vista-menu" : ""}`}>
           <li className="lista-item">
             <Link to="/" className="link">
               Inicio

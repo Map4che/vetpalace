@@ -1,5 +1,5 @@
 .container-video {
-  width: 54%;
+  width: 90%;
   margin: 1rem auto 1rem;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
 
 .imagen-principal {
   width: 100vw;
-  height: 94vh;
+  height: 30vh;
 }
 
 .linea-uno {
@@ -42,8 +42,8 @@
 .video {
   margin: 3rem auto 3rem;
   border-radius: 2.5rem;
-  width: 80rem;
-  height: 40rem;
+  width: 80vw;
+  height: 30vh;
 }
 
 .texto {
@@ -56,4 +56,19 @@
   text-align: center;
   margin-bottom: 2rem;
   border-radius: 2.5rem;
+}
+
+@media screen and (min-width: 725px) {
+  .container-video {
+    width: 60%;
+  }
+
+  .imagen-principal {
+    height: 80vh;
+  }
+
+  .video {
+    width: 40vw;
+    height: 50vh;
+  }
 }

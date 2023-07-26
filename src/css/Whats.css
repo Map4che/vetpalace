@@ -1,6 +1,6 @@
 .logo-whatsapp {
   position: fixed;
-  width: 8rem;
+  width: 6rem;
   top: 50vh;
   right: 2rem;
   cursor: pointer;
@@ -9,4 +9,10 @@
 
 .logo-whatsapp:hover {
   transform: scale(1.2);
+}
+
+@media screen and (min-width: 775px) {
+  .logo-whatsapp {
+    width: 8rem;
+  }
 }

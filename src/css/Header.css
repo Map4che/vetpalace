@@ -1,64 +1,119 @@
 .encabezado {
-  width: 100%;
-  height: 14vh;
-  background-color: rgba(255, 255, 255, 0.63);
-  display: flex;
-  font-size: 1.8rem;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom-left-radius: 2.5rem;
-  border-bottom-right-radius: 2.5rem;
-  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  position: absolute;
   z-index: 1;
 }
 
+.hamburguer {
+  width: 50px;
+  height: 50px;
+  background: cyan;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
 .container-logo {
-  margin: 0 auto 0;
-  height: 14vh;
-  display: flex;
-  background-color: white;
-  width: 100%;
-  overflow: hidden;
-  border-bottom-left-radius: 2.5rem;
+  width: 30vw;
+  height: 20vh;
 }
 
 .logo-vetpalace {
-  display: inline-block;
-  align-self: center;
-  width: 16rem;
-  margin: auto;
-  background-color: white;
-  overflow: hidden;
-  border-bottom-left-radius: 2.5rem;
+  width: 100%;
 }
 
 .lista {
-  display: flex;
+  display: none;
+}
+
+.vista-menu {
+  display: block;
+  width: 70vw;
+  height: 100vh;
+  background-color: rgba(1, 25, 32, 0.877);
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-shadow: 0 0 0 20rem rgba(0, 0, 0, 0.575);
 }
 
 .lista-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20rem;
-  height: 10rem;
+  font-size: 4rem;
   list-style: none;
-  text-align: center;
-  transition: 0.8s;
-}
-
-.lista-item:hover {
-  border-radius: 2rem;
-  align-self: center;
-  background-color: rgba(0, 255, 255, 0.575);
+  padding: 2rem;
+  margin-top: 3rem;
 }
 
 .link {
-  display: inline-block;
-  height: 10rem;
-  width: 30rem;
-  padding: 4rem 1rem 4rem 1rem;
   text-decoration: none;
-  color: black;
-  font-weight: 900;
+  color: white;
+}
+
+@media screen and (min-width: 725px) {
+  .encabezado {
+    width: 100%;
+    height: 14vh;
+    background-color: rgba(255, 255, 255, 0.63);
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .container-logo {
+    margin: 0 auto 0;
+    height: 14vh;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    border-bottom-left-radius: 2.5rem;
+  }
+
+  .logo-vetpalace {
+    display: inline-block;
+    align-self: center;
+    width: 16rem;
+    margin: auto;
+    background-color: white;
+    overflow: hidden;
+    border-bottom-left-radius: 2.5rem;
+  }
+
+  .lista {
+    display: flex;
+  }
+
+  .lista-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 10rem;
+    list-style: none;
+    text-align: center;
+    transition: 0.8s;
+  }
+
+  .lista-item:hover {
+    border-radius: 2rem;
+    align-self: center;
+    background-color: rgba(0, 255, 255, 0.575);
+  }
+
+  .link {
+    display: inline-block;
+    height: 10rem;
+    width: 30rem;
+    padding: 4rem 1rem 4rem 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+  }
 }
