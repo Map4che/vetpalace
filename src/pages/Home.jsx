@@ -1,11 +1,10 @@
 import "../css/Home.css";
-import principal from "../images/principal1.jpg";
 
 const Home = () => {
   return (
     <div className="container">
       <div className="contenedor-imagen">
-        <img src={principal} alt="" className="imagen-principal" />
+        <img className="imagen-principal" />
       </div>
       <div className="container-video">
         <p className="titulo-parrafo linea-uno">Trabajamos con amor</p>

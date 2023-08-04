@@ -21,6 +21,9 @@
 }
 
 .imagen-principal {
+  background-image: url(../images/principal1.jpg);
+  background-position: center;
+  background-size: cover;
   width: 100vw;
   height: 30vh;
 }
@@ -64,7 +67,8 @@
   }
 
   .imagen-principal {
-    height: 80vh;
+    background-image: url(../images/collagedetres.jpg);
+    height: 94vh;
   }
 
   .video {
